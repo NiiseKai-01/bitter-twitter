@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "TwitterChirp";
+    src:url("src/chirp-regular-web.woff") ;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: "TwitterChirp";
+    /* z-index: 0; */
+}
+.page {
+    display: grid;
+    grid-template-columns: 26.5vw 39.5vw 1fr;
+    height: 100vh;
+}
+.leftsidebar{
+    grid-column: 2.54;
+    background-color:rgb(0, 0, 0);
+    border-right: 1px solid rgb(47,51,54);
+    
+}
+.feed{
+    grid-column: 2/3;
+    background-color: rgb(0,0,0);
+}
+.rightsidebar{
+    grid-column: 3/4;
+    background-color: #72A276;
+}
+.side_options{
+    display: flex;
+    flex-direction: row;
+    font-size: 16.5px;
+    align-items:baseline ;
+    padding-left: 7rem;
+    margin-bottom:18px ;
+}
+.side_options #X{
+    width: 1.15em;
+    height: 1.15em;
+    margin-top: 12px;
+    margin-bottom: 9px;
+}
+.icon{
+    width: 1em;
+    height: 1em;
+    margin-right: 20px;
+}
+#post_btn{
+    width: 190px;
+    height: 42px;
+    border-radius: 50px;
+    margin-left: -15px;
+}
+#post_btn_text{
+    color: black;
+    font-weight: 900;
+}
+
+.feed_tabs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: max-content;
+}
+
+.Foryou{
+    grid-column: 1/span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+
+    text-align: center;
+}
+
+.Following{
+    grid-column: 2/span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+}
